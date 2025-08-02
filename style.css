@@ -62,3 +62,27 @@ b{
 .disabled{
     display: none;
 }
+
+.rules {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.rules h3 {
+    color: yellow;
+    margin-bottom: 10px;
+}
+
+.rules ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.rules li {
+    margin-bottom: 8px;
+}
