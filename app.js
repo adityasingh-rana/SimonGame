@@ -16,6 +16,7 @@ document.addEventListener("keypress", function () {
     if (!isGameStarted) {
         isGameStarted = true;
         levelUp();
+        startBtn.classList.add("disabled");
     }
 });
 
