@@ -52,3 +52,13 @@ body{
 b{
     color: greenyellow;
 }
+
+.start{
+    border-radius: 10px;
+    background-color: green;
+    color: wheat;
+}
+
+.disabled{
+    display: none;
+}

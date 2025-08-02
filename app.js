@@ -6,6 +6,7 @@ let heading = document.querySelector("h2");
 let btn = null;
 let color = null;
 let scores = [];
+let startBtn = document.querySelector(".start");
 
 const audio = document.querySelector("#audio");
 const buttonColors = ["aqua", "blue", "green", "yellow"];
@@ -15,6 +16,14 @@ document.addEventListener("keypress", function () {
     if (!isGameStarted) {
         isGameStarted = true;
         levelUp();
+    }
+});
+
+startBtn.addEventListener("click",function() {
+    if (!isGameStarted) {
+        isGameStarted = true;
+        levelUp();
+        startBtn.classList.add("disabled");
     }
 });
 
@@ -88,6 +97,8 @@ function reset() {
     level = 0;
     gamePattern = [];
     userClickedPattern = [];
+    startBtn.classList.remove("disabled");
+    startBtn.textContent = "Play Again!";
 };
 
 let highestScore = -1;
